@@ -41,7 +41,7 @@ struct Likes {
 }
 
 fn main() {
-	db := sqlite.connect('./db/fourm.db')!
+	db := sqlite.connect('fourm.db')!
 
 	db.exec_none('CREATE TABLE IF NOT EXISTS articles(
 					id INTEGER PRIMARY KEY AUTOINCREMENT,
