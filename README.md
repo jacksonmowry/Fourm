@@ -46,7 +46,7 @@ We welcome contributions to make this project even more amazing! Feel free to fo
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPLv3.0 License](LICENSE).
 
 ---
 
