@@ -1,0 +1,8 @@
+@if app.user == User{}
+    @include 'taken.html'
+    @include 'wrong.html'
+    @include 'signup_modal.html'
+    @include 'login_modal.html'
+@else
+    @include 'post_modal.html'
+@end

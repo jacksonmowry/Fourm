@@ -1,0 +1,27 @@
+<div class="modal backdrop-blur" id="login">
+    <div class="modal-box bg-base-100">
+        <div class="flex justify-between">
+            <h2 class="text-xl font-semibold px-1 text-base-content">Login</h2>
+            <a href="#close">
+                @include 'close.html'
+            </a>
+        </div>
+        <form method="post" action="/login_form">
+            <label class="label block w-full">
+                <span class="label-text text-base-content">Username</span>
+                <input required type="text" id="username" name="username" placeholder="username"
+                       class="input input-bordered w-full text-base-content"/>
+            </label>
+            <label class="label block w-full">
+                <span class="label-text text-base-content">Password</span>
+                <input required type="password" id="password" name="password" placeholder="password"
+                       class="input input-bordered w-full text-base-content"/>
+            </label>
+            <div class="modal-action">
+                <button type="submit" class="btn btn-accent w-full">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

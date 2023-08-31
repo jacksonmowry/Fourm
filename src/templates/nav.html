@@ -1,0 +1,28 @@
+<nav class="flex items-center justify-between p-4">
+    <a href="/"><div class="text-stone-200 font-bold cursor-pointer">
+        @include 'home.html'
+        <span class="hidden sm:inline">Home Page</span>
+    </div></a>
+    <div class="flex justify-between gap-4 text-stone-200">
+        @if app.user != User{}
+        <span>Hi there
+        <a href="/author/@app.user.username" class="text-blue-400 underline text-lg">@app.user.username</a>
+        !</span>
+        @end
+        <details class="relative list-none" style="-webkit-list-style:none;">
+            <summary style="-webkit-list-style: none; list-style-type: none;">
+                @include 'hamburger.html'
+            </summary>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow shadow-black drop-shadow bg-neutral-focus rounded-box w-max text-lg absolute right-0">
+                <li><a href="/latest">Latest Post</a></li>
+                @if app.user != User{}
+                <li><a href="/new">New Post</a></li>
+                <li><a href="/signout">Sign Out</a></li>
+                @else
+                <li><a href="#signup">Signup</a></li>
+                <li><a href="#login">Login</a></li>
+                @end
+            </ul>
+        </div>
+    </div>
+</nav>

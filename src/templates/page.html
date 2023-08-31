@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/output.css" type="text/css" media="screen" />
+	    <title>Page @page</title>
+    </head>
+    @include 'modals.html
+    <body class="flex flex-col">
+        @include 'nav.html'
+        <div class="w-11/12 flex flex-col gap-4 self-center mb-4">
+        @include 'multiple_articles.html'
+        </div>
+        <div class="flex justify-center gap-4 mb-4">
+            @if prev
+            <a href="/page/@prev_page"><button class="btn btn-error rounded">prev</button></a>
+            @end
+            @if next
+            <a href="/page/@next_page"><button class="btn btn-success rounded">next</button></a>
+            @end
+        </div>
+    </body>
+    @include 'footer.html'
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/output.css" type="text/css" media="screen" />
+        <title>New Post</title>
+    </head>
+    @include 'modals.html
+    <body class="flex flex-col gap-2">
+        @include 'nav.html'
+        <div class="card w-11/12 self-center bg-base-content text-base-100 mb-4">
+            <h2 class="card-title p-4">New Post</h2>
+            <div class="card-body -mt-10">
+                <form method="post" action="/new_article">
+                    <label class="label block w-full">
+                        <span class="label-text text-base-100">Title</span>
+                        <input required type="text" id="title" name="title" placeholder="Title..."
+                               class="input input-bordered w-full text-base-content"/>
+                    </label>
+                    <label class="label block w-full">
+                        Article Body
+                        <textarea required rows="12" id="body" name="body" placeholder="Article text goes here..." class="textarea w-full text-base-content"></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-accent w-full">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </article>
+    </body>
+</html>

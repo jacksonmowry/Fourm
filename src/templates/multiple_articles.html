@@ -1,0 +1,11 @@
+@for article in articles
+
+    <div class="card bg-base-content shadow-xl">
+        <div class="card-body text-base-300">
+            <a href="/article/@article.id"><h2 class="card-title line-clamp-3">@article.title</h2></a>
+            <a href="/author/@article.author"><h3 class="text-sm italic text-sky-900 font-semibold">@article.author</h3></a>
+            <a href="/article/@article.id"><p class="line-clamp-6">@article.body</p></a>
+        </div>
+    </div>
+</a>
+@end

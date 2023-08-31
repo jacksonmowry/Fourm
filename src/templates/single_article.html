@@ -1,0 +1,21 @@
+    <div class="card bg-base-content shadow-xl">
+        <div class="card-body text-base-300">
+            <div class="flex justify-between items-center">
+                <h2 class="card-title">@article.title</h2>
+                <div class="flex">
+                    <a href="/upvote/@article.id" class="">
+                        @if liked
+                        <button class="btn-sm btn-success h-min w-max">
+                        @else
+                        <button class="btn-sm btn-neutral h-min w-max">
+                        @end
+                            <span>Likes</span>
+                            <span class="">@article.likes</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <a href="/author/@article.author"><h3 class="text-sm italic text-sky-900 font-semibold">@article.author</h3></a>
+            <p class="">@article.body</p>
+        </div>
+    </div>

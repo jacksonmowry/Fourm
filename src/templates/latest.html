@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/output.css" type="text/css" media="screen" />
+        <title>Latest Article</title>
+    </head>
+    @include 'modals.html
+    <body class="flex flex-col">
+        @include 'nav.html'
+        <div class="w-11/12 flex flex-col gap-4 self-center">
+            @if article != Article{}
+            @include 'single_article.html'
+            @end
+            @if article == Article{}
+            <h2 class="self-center font-semibold text-xl">Looks like there's nothing here yet</h2>
+            <h3 class="self-center">Be the first to post</h3>
+            <div class="self-center flex items-center gap-4">
+                <a href="#signup" class="px-4 py-2 rounded self-center bg-stone-700">Signup</a>
+                <a href="/new" class="px-4 py-2 rounded self-center bg-accent">New Post</a>
+            </div>
+            @end
+        </div>
+        @include 'footer.html'
+    </body>
+</html>

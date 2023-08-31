@@ -1,0 +1,24 @@
+<div class="modal backdrop-blur" id="new">
+    <div class="modal-box bg-base-100">
+        <div class="flex justify-between">
+            <h2 class="text-xl font-semibold px-1 text-base-content">New Post</h2>
+            <a href="#close">
+                @include 'close.html'
+            </a>
+        </div>
+        <form method="post" action="/new_article">
+            <label class="label block w-full">
+                <span class="label-text text-base-content">Title</span>
+                <input required type="text" id="title" name="title" placeholder="Title..."
+                       class="input input-bordered w-full text-base-content"/>
+            </label>
+            <label class="label block w-full">
+                <span class="label-text text-base-content">Article Body</span>
+                <textarea required rows="12" id="body" name="body" placeholder="Article text goes here..." class="textarea w-full text-base-content textarea-bordered"></textarea>
+            </label>
+            <button type="submit" class="btn btn-accent w-full">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
