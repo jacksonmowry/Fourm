@@ -1,5 +1,5 @@
-# TVfourm
-Fourm/Microblogging website written in V and Tailwind with Zero JS
+# TVforum
+Forum/Microblogging website written in V and Tailwind with Zero JS
 
 ## 🌟 Features
 
@@ -36,8 +36,8 @@ Follow these steps to run the project locally:
 
 1. Install V: [V Installation Guide](https://vlang.io/docs)
 2. Install Tailwind: [Tailwind CSS Installation Guide](https://tailwindcss.com/docs/installation)
-3. Clone this repository: `git clone https://github.com/jacksonmowry/TVfourm.git`
-4. Navigate to the project folder: `cd TVfourm/src`
+3. Clone this repository: `git clone https://github.com/jacksonmowry/TVforum.git`
+4. Navigate to the project folder: `cd TVforum/src`
 5. Launch the V development server: `v run .`
 
 ## 🎉 Contribution
@@ -50,4 +50,4 @@ This project is licensed under the [GPLv3.0 License](LICENSE).
 
 ---
 
-Thank you for checking out TVfourm! If you have any questions or feedback, don't hesitate to post an issue.
+Thank you for checking out TVforum! If you have any questions or feedback, don't hesitate to post an issue.
